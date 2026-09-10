@@ -254,13 +254,11 @@ A full record of 14 non-obvious engineering decisions is available in [`DECISION
 ---
 
 ## Screenshots - 
-<img width="944" height="485" alt="image" src="https://github.com/user-attachments/assets/1ba5111f-ec92-4075-ade1-d90de10b4728" />
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/1ba5111f-ec92-4075-ade1-d90de10b4728" />
 
-<img width="920" height="474" alt="image" src="https://github.com/user-attachments/assets/ec1037f7-c696-430c-9858-ded53ca8b888" />
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/ec1037f7-c696-430c-9858-ded53ca8b888" />
 
-<img width="930" height="484" alt="image" src="https://github.com/user-attachments/assets/2430528f-4a6f-4869-afc1-6afcabe6ff39" />
-
-
+<img width="800" height="400" alt="image" src="https://github.com/user-attachments/assets/2430528f-4a6f-4869-afc1-6afcabe6ff39" />
 
 ## 12. Key Engineering Q&A
 

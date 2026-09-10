@@ -2,8 +2,6 @@
 
 A multi-stage customer support triage and response generation system trained on Kaggle's "Customer Support on Twitter" dataset (@AppleSupport). The agent classifies customer complaints into a 10-intent taxonomy, retrieves historically verified Apple Support interactions via FAISS, applies explainable brand-safety escalation rules, and drafts grounded troubleshooting replies.
 
-**Author:** Priya Pandey  
-**Project:** AI Customer Support Agent (Hiver SDE Intern Assignment)  
 **Corpus:** Kaggle "Customer Support on Twitter" by thoughtvector (`@AppleSupport` subset)  
 **Headline Benchmark Runtime:** ~17 seconds on CPU (Target: < 15 minutes)
 

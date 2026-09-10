@@ -1,0 +1,898 @@
+{
+  "timestamp": "2026-09-10 14:38:23",
+  "benchmark_runtime_seconds": 16.89,
+  "split_sizes": {
+    "train": 19545,
+    "classifier_eval": 3448,
+    "golden_eval": 200
+  },
+  "intent_classification": {
+    "trivial_baseline": {
+      "accuracy": 0.3083,
+      "macro_f1": 0.0471,
+      "weighted_f1": 0.1453,
+      "per_intent": {
+        "autocorrect_text_bug": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 318
+        },
+        "account_security_icloud": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 149
+        },
+        "billing_repair_order": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 89
+        },
+        "battery_power": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 355
+        },
+        "screen_hardware_damage": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 203
+        },
+        "connectivity": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 139
+        },
+        "ios_software_update": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 832
+        },
+        "app_appstore_media": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 241
+        },
+        "device_not_working": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 59
+        },
+        "other_unclear": {
+          "precision": 0.308,
+          "recall": 1.0,
+          "f1": 0.471,
+          "support": 1063
+        }
+      },
+      "confusion_matrix": [
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          318
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          149
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          89
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          355
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          203
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          139
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          832
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          241
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          59
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1063
+        ]
+      ],
+      "labels": [
+        "autocorrect_text_bug",
+        "account_security_icloud",
+        "billing_repair_order",
+        "battery_power",
+        "screen_hardware_damage",
+        "connectivity",
+        "ios_software_update",
+        "app_appstore_media",
+        "device_not_working",
+        "other_unclear"
+      ]
+    },
+    "simple_ml_baseline": {
+      "accuracy": 0.8489,
+      "macro_f1": 0.8418,
+      "weighted_f1": 0.8531,
+      "per_intent": {
+        "autocorrect_text_bug": {
+          "precision": 0.58,
+          "recall": 0.764,
+          "f1": 0.659,
+          "support": 318
+        },
+        "account_security_icloud": {
+          "precision": 0.942,
+          "recall": 0.872,
+          "f1": 0.906,
+          "support": 149
+        },
+        "billing_repair_order": {
+          "precision": 0.826,
+          "recall": 0.798,
+          "f1": 0.811,
+          "support": 89
+        },
+        "battery_power": {
+          "precision": 0.979,
+          "recall": 0.924,
+          "f1": 0.951,
+          "support": 355
+        },
+        "screen_hardware_damage": {
+          "precision": 0.902,
+          "recall": 0.857,
+          "f1": 0.879,
+          "support": 203
+        },
+        "connectivity": {
+          "precision": 0.928,
+          "recall": 0.928,
+          "f1": 0.928,
+          "support": 139
+        },
+        "ios_software_update": {
+          "precision": 0.906,
+          "recall": 0.858,
+          "f1": 0.881,
+          "support": 832
+        },
+        "app_appstore_media": {
+          "precision": 0.759,
+          "recall": 0.925,
+          "f1": 0.834,
+          "support": 241
+        },
+        "device_not_working": {
+          "precision": 0.585,
+          "recall": 0.932,
+          "f1": 0.719,
+          "support": 59
+        },
+        "other_unclear": {
+          "precision": 0.894,
+          "recall": 0.809,
+          "f1": 0.849,
+          "support": 1063
+        }
+      },
+      "confusion_matrix": [
+        [
+          243,
+          2,
+          3,
+          1,
+          1,
+          2,
+          28,
+          1,
+          1,
+          36
+        ],
+        [
+          0,
+          130,
+          3,
+          0,
+          2,
+          2,
+          4,
+          4,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          71,
+          3,
+          4,
+          1,
+          3,
+          3,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          0,
+          328,
+          4,
+          2,
+          10,
+          3,
+          3,
+          5
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          174,
+          1,
+          8,
+          8,
+          2,
+          10
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          129,
+          1,
+          4,
+          2,
+          2
+        ],
+        [
+          29,
+          1,
+          0,
+          1,
+          2,
+          1,
+          714,
+          39,
+          13,
+          32
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          1,
+          0,
+          4,
+          223,
+          6,
+          6
+        ],
+        [
+          1,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          55,
+          3
+        ],
+        [
+          144,
+          5,
+          9,
+          2,
+          5,
+          1,
+          16,
+          9,
+          12,
+          860
+        ]
+      ],
+      "labels": [
+        "autocorrect_text_bug",
+        "account_security_icloud",
+        "billing_repair_order",
+        "battery_power",
+        "screen_hardware_damage",
+        "connectivity",
+        "ios_software_update",
+        "app_appstore_media",
+        "device_not_working",
+        "other_unclear"
+      ]
+    },
+    "rule_based_taxonomy": {
+      "accuracy": 1.0,
+      "macro_f1": 1.0,
+      "weighted_f1": 1.0,
+      "per_intent": {
+        "autocorrect_text_bug": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 318
+        },
+        "account_security_icloud": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 149
+        },
+        "billing_repair_order": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 89
+        },
+        "battery_power": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 355
+        },
+        "screen_hardware_damage": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 203
+        },
+        "connectivity": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 139
+        },
+        "ios_software_update": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 832
+        },
+        "app_appstore_media": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 241
+        },
+        "device_not_working": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 59
+        },
+        "other_unclear": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 1063
+        }
+      },
+      "confusion_matrix": [
+        [
+          318,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          149,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          89,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          355,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          203,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          139,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          832,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          241,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          59,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          1063
+        ]
+      ],
+      "labels": [
+        "autocorrect_text_bug",
+        "account_security_icloud",
+        "billing_repair_order",
+        "battery_power",
+        "screen_hardware_damage",
+        "connectivity",
+        "ios_software_update",
+        "app_appstore_media",
+        "device_not_working",
+        "other_unclear"
+      ]
+    },
+    "production_hybrid": {
+      "accuracy": 0.955,
+      "macro_f1": 0.968,
+      "weighted_f1": 0.9566,
+      "per_intent": {
+        "autocorrect_text_bug": {
+          "precision": 0.707,
+          "recall": 1.0,
+          "f1": 0.828,
+          "support": 318
+        },
+        "account_security_icloud": {
+          "precision": 0.987,
+          "recall": 1.0,
+          "f1": 0.993,
+          "support": 149
+        },
+        "billing_repair_order": {
+          "precision": 0.978,
+          "recall": 1.0,
+          "f1": 0.989,
+          "support": 89
+        },
+        "battery_power": {
+          "precision": 0.997,
+          "recall": 1.0,
+          "f1": 0.999,
+          "support": 355
+        },
+        "screen_hardware_damage": {
+          "precision": 0.99,
+          "recall": 1.0,
+          "f1": 0.995,
+          "support": 203
+        },
+        "connectivity": {
+          "precision": 1.0,
+          "recall": 1.0,
+          "f1": 1.0,
+          "support": 139
+        },
+        "ios_software_update": {
+          "precision": 0.99,
+          "recall": 1.0,
+          "f1": 0.995,
+          "support": 832
+        },
+        "app_appstore_media": {
+          "precision": 0.984,
+          "recall": 1.0,
+          "f1": 0.992,
+          "support": 241
+        },
+        "device_not_working": {
+          "precision": 0.937,
+          "recall": 1.0,
+          "f1": 0.967,
+          "support": 59
+        },
+        "other_unclear": {
+          "precision": 1.0,
+          "recall": 0.854,
+          "f1": 0.921,
+          "support": 1063
+        }
+      },
+      "confusion_matrix": [
+        [
+          318,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          149,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          89,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          355,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          203,
+          0,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          139,
+          0,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          832,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          241,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          0,
+          59,
+          0
+        ],
+        [
+          132,
+          2,
+          2,
+          1,
+          2,
+          0,
+          8,
+          4,
+          4,
+          908
+        ]
+      ],
+      "labels": [
+        "autocorrect_text_bug",
+        "account_security_icloud",
+        "billing_repair_order",
+        "battery_power",
+        "screen_hardware_damage",
+        "connectivity",
+        "ios_software_update",
+        "app_appstore_media",
+        "device_not_working",
+        "other_unclear"
+      ]
+    }
+  },
+  "retrieval": {
+    "Hit@1": 0.678,
+    "Hit@3": 0.868,
+    "Hit@5": 0.916,
+    "MeanTop1Similarity": 0.7695,
+    "TotalEvaluated": 500
+  },
+  "escalation": {
+    "total_golden": 200,
+    "auto_handled_count": 113,
+    "auto_handled_pct": 56.5,
+    "escalated_count": 87,
+    "escalated_pct": 43.5,
+    "sensitive_risk_escalation_pct": 100.0
+  },
+  "reply_quality": {
+    "average_relevance": 3.96,
+    "average_groundedness": 4.5,
+    "average_helpfulness": 4.8,
+    "average_completeness": 4.84,
+    "hallucination_rate_pct": 0.0,
+    "average_overall_score": 4.46
+  },
+  "human_agreement": {
+    "sample_size": 50,
+    "exact_agreement_pct": 50.0,
+    "within_1_point_agreement_pct": 94.0,
+    "mean_absolute_error": 0.56,
+    "spearman_rho": 0.1317,
+    "quadratic_weighted_kappa": 0.1062
+  },
+  "failure_modes": [
+    {
+      "id": "FM-01",
+      "title": "Ultra-Short / Follow-Up Tweets Lacking Context",
+      "example_customer": "@AppleSupport u too https://t.co/AubRbVtD4f",
+      "predicted_intent": "other_unclear",
+      "system_action": "ESCALATE (Ambiguous query)",
+      "why_it_failed": "Customer posted an image link or continuation of an uncaptured earlier thread without any textual explanation.",
+      "hypothesis": "Twitter support often occurs in multi-tweet bursts or replies to personal threads where the initial context exists outside the tweet chain.",
+      "mitigation": "Agent prompts customer for device model and description, or extracts OCR text from attached image links in future iterations."
+    },
+    {
+      "id": "FM-02",
+      "title": "Vocabulary-Deficient Keyword Matching (Silver Label False Negatives)",
+      "example_customer": "Can't edit Can't share Happens to various photos iOS 11.1.2 6s",
+      "predicted_intent": "ios_software_update",
+      "system_action": "AUTO-HANDLE (General iOS restart advice)",
+      "why_it_failed": "Classified under generic iOS update because it mentions 'iOS 11.1.2', missing the specific Photos app malfunction.",
+      "hypothesis": "Regex priority placed `ios_software_update` ahead of media/app handling when OS version strings appear.",
+      "mitigation": "Implement semantic intent embeddings rather than rigid regex priority order to weigh app symptoms equally with OS tags."
+    },
+    {
+      "id": "FM-03",
+      "title": "Historical Policy Drift (Transient iOS 11 Bugs vs Current Software)",
+      "example_customer": "fix y'all damn software. 'A ?' I'm sick of this!",
+      "predicted_intent": "autocorrect_text_bug",
+      "system_action": "AUTO-HANDLE (Advised updating to iOS 11.1.1 workaround)",
+      "why_it_failed": "The retrieved 2017 Apple response points to iOS 11.1.1 text replacement workaround, which is obsolete for modern devices.",
+      "hypothesis": "Dataset reflects November 2017 Twitter interactions; point-in-time workarounds become outdated as software evolves.",
+      "mitigation": "Augment retrieval metadata with knowledge cutoff date tags and filter out transient patch advice in favor of general OS update guidance."
+    },
+    {
+      "id": "FM-04",
+      "title": "Complex Multi-Issue Inquiries With Contradictory Routing",
+      "example_customer": "Phone freezing, won't charge. Dad won't let me upgrade so chill please.",
+      "predicted_intent": "battery_power",
+      "system_action": "AUTO-HANDLE (Battery diagnostics recommendation)",
+      "why_it_failed": "Message combines power failure ('won't charge') with system unresponsiveness ('freezing') and conversational sarcasm.",
+      "hypothesis": "Single-label classification forces multi-symptom inquiries into a single bucket, risking incomplete triage.",
+      "mitigation": "Support multi-intent tagging and default to human escalation whenever distinct hardware and software symptoms co-occur."
+    },
+    {
+      "id": "FM-05",
+      "title": "Subtle Sarcasm & Frustration Masking Genuine Inquiries",
+      "example_customer": "Gee thanks @AppleSupport for fixing NONE of the problems I've been experiencing",
+      "predicted_intent": "other_unclear",
+      "system_action": "ESCALATE (Vague complaint without symptoms)",
+      "why_it_failed": "Contains the word 'thanks' which trigger surface sentiment filters, while expressing intense dissatisfaction without technical details.",
+      "hypothesis": "Heuristic resolution detection can mistake sarcastic thank-yous for resolved tickets.",
+      "mitigation": "Incorporate sentiment polarity filtering and flag high-frustration tweets for prioritized human senior escalation."
+    }
+  ]
+}

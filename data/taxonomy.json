@@ -1,0 +1,72 @@
+{
+  "autocorrect_text_bug": {
+    "definition": "Complaints about the iOS keyboard/autocorrect bug that mangled the letter 'i' (a real, documented iOS 11.1-era defect).",
+    "include": "Message mentions the corrupted 'i' character, 'autocorrect', or describes the keyboard glitch.",
+    "exclude": "General typing complaints unrelated to the specific 'i' bug.",
+    "count": 2035,
+    "pct_of_total": 8.77
+  },
+  "account_security_icloud": {
+    "definition": "Login, Apple ID, iCloud, password, or account-security/lockout issues.",
+    "include": "Mentions iCloud, Apple ID, password, login, 2FA, or account being locked/hacked.",
+    "exclude": "Purchase/billing issues tied to an account (goes to billing_repair_order).",
+    "count": 927,
+    "pct_of_total": 4.0
+  },
+  "billing_repair_order": {
+    "definition": "Refunds, incorrect charges, orders, warranty, repairs, or replacements.",
+    "include": "Mentions refund, charge, order, warranty, repair, replacement, return, Genius Bar.",
+    "exclude": "General battery or screen complaints with no billing/repair request.",
+    "count": 578,
+    "pct_of_total": 2.49
+  },
+  "battery_power": {
+    "definition": "Battery drain, charging problems, or device not powering on.",
+    "include": "Mentions battery, charging, draining, or the device failing to turn on.",
+    "exclude": "Device turning off/crashing without a battery/charging cause (device_not_working).",
+    "count": 2350,
+    "pct_of_total": 10.13
+  },
+  "screen_hardware_damage": {
+    "definition": "Cracked, broken, or malfunctioning screen/display or physical buttons.",
+    "include": "Mentions screen, crack, display, Touch ID/Face ID, stuck buttons, water damage.",
+    "exclude": "Software-only display glitches with no hardware damage implied.",
+    "count": 1303,
+    "pct_of_total": 5.62
+  },
+  "connectivity": {
+    "definition": "Wi-Fi, Bluetooth, cellular signal, or hotspot connection problems.",
+    "include": "Mentions wifi, bluetooth, signal, cellular, hotspot, or 'won't connect'.",
+    "exclude": "App-specific connectivity (e.g. one app not loading) with no network complaint.",
+    "count": 946,
+    "pct_of_total": 4.08
+  },
+  "ios_software_update": {
+    "definition": "Problems following or caused by an iOS/software update.",
+    "include": "Mentions update, iOS version numbers, software, reinstalling.",
+    "exclude": "The specific autocorrect 'i' bug (its own category).",
+    "count": 5763,
+    "pct_of_total": 24.85
+  },
+  "app_appstore_media": {
+    "definition": "Issues with the App Store, iTunes, Apple Music, or a specific app/download.",
+    "include": "Mentions App Store, iTunes, Apple Music, an app, or downloads/podcasts.",
+    "exclude": "OS-level update issues with no specific app mentioned.",
+    "count": 1489,
+    "pct_of_total": 6.42
+  },
+  "device_not_working": {
+    "definition": "Device frozen, crashing, restarting, or generally unresponsive, without a clear battery/screen/connectivity cause.",
+    "include": "Mentions frozen, crashing, not responding, bricked, dead.",
+    "exclude": "Cases already covered by a more specific category above.",
+    "count": 415,
+    "pct_of_total": 1.79
+  },
+  "other_unclear": {
+    "definition": "Everything that doesn't match a rule above: vague complaints, off-topic mentions, single-word replies, or messages needing more context.",
+    "include": "No keyword match from any rule above.",
+    "exclude": "n/a (fallback bucket).",
+    "count": 7387,
+    "pct_of_total": 31.85
+  }
+}

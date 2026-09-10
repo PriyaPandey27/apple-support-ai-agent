@@ -1,0 +1,32 @@
+# Large datasets (Raw Kaggle 3M-row file)
+twcs.csv
+
+# Environment & Credentials
+.env
+*.env.local
+
+# Python caches & virtual environments
+__pycache__/
+*.py[cod]
+*$py.class
+venv/
+env/
+.venv/
+build/
+dist/
+*.egg-info/
+
+# IDE & OS files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# HuggingFace & Torch caches
+.cache/
+hf_cache/
+
+# Large precomputed vectors (reproducible via prepare_dataset.py / run_evaluation.py)
+# data/faiss_index.bin is kept if under 50MB, but ignore temporary dumps
+*.log
+scratch/
